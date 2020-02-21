@@ -40,7 +40,7 @@ void DecompressBlockDXT1(unsigned long x, unsigned long y, unsigned long width, 
     temp = (color1 & 0x001F) * 255 + 16;
     unsigned char b1 = (unsigned char)((temp/32 + temp)/32);
 
-    unsigned long code = *reinterpret_cast<const unsigned long *>t(blockStorage + 4);
+    unsigned long code = *reinterpret_cast<const unsigned long *>(blockStorage + 4);
 
     for (int j=0; j < 4; j++)
     {
